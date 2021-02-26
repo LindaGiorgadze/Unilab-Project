@@ -18,6 +18,12 @@
     align-items: center;
 }
 
+%flex2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 %button1 {
     border: solid 0px $color2;
     border-radius: 8px;
