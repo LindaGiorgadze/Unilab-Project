@@ -60,9 +60,18 @@ button {
   font-style: normal;
   font-display: swap; }
 
-body header .top {
+body header .top, body .news-div {
   max-width: 1440px;
   margin: 0 auto; }
+
+body .news-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+body .news-div .world-news .world-news-text article button {
+  border: solid 0px #FA6980;
+  border-radius: 8px; }
 
 @font-face {
   font-family: 'Helvetica';
@@ -150,9 +159,18 @@ button {
   font-style: normal;
   font-display: swap; }
 
-body header .top {
+body header .top, body .news-div {
   max-width: 1440px;
   margin: 0 auto; }
+
+body .news-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+body .news-div .world-news .world-news-text article button {
+  border: solid 0px #FA6980;
+  border-radius: 8px; }
 
 @font-face {
   font-family: 'Helvetica';
@@ -206,3 +224,43 @@ body header {
           width: 30px;
           object-fit: contain;
           clip-path: circle(50% at 50% 50%); }
+
+body .news-div {
+  margin-top: 53px; }
+  body .news-div .world-news {
+    padding: 175px 140px;
+    background-image: url("../images/world-background.jpg");
+    background-position: center;
+    background-size: cover; }
+    body .news-div .world-news .world-news-text h2 {
+      font-family: "Helvetica";
+      font-size: 24px;
+      font-weight: bold;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      display: block;
+      padding-bottom: 40px;
+      border-bottom: solid 2px #FFFFFF; }
+    body .news-div .world-news .world-news-text article {
+      padding-top: 40px; }
+      body .news-div .world-news .world-news-text article h4 {
+        font-family: "Helvetica";
+        font-size: 24px;
+        font-weight: bold;
+        color: #FFFFFF; }
+      body .news-div .world-news .world-news-text article p {
+        font-family: "Helvetica";
+        font-size: 16px;
+        font-weight: regular;
+        color: #FFFFFF;
+        margin: 11px 0 32px;
+        min-width: 560px;
+        line-height: 26px; }
+      body .news-div .world-news .world-news-text article button {
+        font-family: "Helvetica";
+        font-size: 11px;
+        font-weight: bold;
+        color: #FFFFFF;
+        background-color: #FA6980;
+        text-transform: uppercase;
+        padding: 15px 34px; }

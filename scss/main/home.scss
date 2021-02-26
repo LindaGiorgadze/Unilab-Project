@@ -46,4 +46,43 @@ body {
             }
         }
     }
+    .news-div {
+        @extend %flex1;
+        @extend %container;
+        margin-top: 53px;
+        .world-news {
+            padding: 175px 140px;
+            background-image: url("../images/world-background.jpg");
+            background-position: center;
+            background-size: cover;
+            .world-news-text {
+                h2 {
+                    @include font ($font1, $font-size3, bold, $color3);
+                    text-transform: uppercase;
+                    display: block;
+                    padding-bottom: 40px;
+                    border-bottom: solid 2px $color3;
+                }
+                article {
+                    padding-top: 40px;
+                    h4 {
+                        @include font ($font1, $font-size3, bold, $color3);
+                    }
+                    p {
+                        @include font ($font1, $font-size4, regular, $color3);
+                        margin: 11px 0 32px;
+                        min-width: 560px;
+                        line-height: 26px;
+                    }
+                    button {
+                        @extend %button1;
+                        @include font ($font1, $font-size2, bold, $color3);
+                        background-color: $color2;
+                        text-transform: uppercase;
+                        padding: 15px 34px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -12,7 +12,13 @@
     font-style: normal;
 }
 
-%input1 {
-    border: solid 2px $color2;
+%flex1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%button1 {
+    border: solid 0px $color2;
     border-radius: 8px;
 }
