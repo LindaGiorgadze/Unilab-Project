@@ -64,19 +64,35 @@ body header .top, body .news-div {
   max-width: 1440px;
   margin: 0 auto; }
 
-body .news-div, body .news-div .more-news .more-news-title {
+body .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 140px; }
+
+body .news-div, body .news-div .more-news .more-news-title, body .container .trending .trending-title, body .container .trending .articles-div, body .container .happening .happening-title, body .container .happening .articles-div {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time {
+body .news-div .more-news article .time, body .container .trending .articles-div .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
 
+body .container .happening .articles-div .large-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column; }
+
 body .news-div .world-news .world-news-text article button {
   border: solid 0px #FA6980;
   border-radius: 8px; }
+
+body .news-div .more-news article .time img, body .container .trending .articles-div .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px; }
 
 @font-face {
   font-family: 'Helvetica';
@@ -168,19 +184,35 @@ body header .top, body .news-div {
   max-width: 1440px;
   margin: 0 auto; }
 
-body .news-div, body .news-div .more-news .more-news-title {
+body .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 140px; }
+
+body .news-div, body .news-div .more-news .more-news-title, body .container .trending .trending-title, body .container .trending .articles-div, body .container .happening .happening-title, body .container .happening .articles-div {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time {
+body .news-div .more-news article .time, body .container .trending .articles-div .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
 
+body .container .happening .articles-div .large-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column; }
+
 body .news-div .world-news .world-news-text article button {
   border: solid 0px #FA6980;
   border-radius: 8px; }
+
+body .news-div .more-news article .time img, body .container .trending .articles-div .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px; }
 
 @font-face {
   font-family: 'Helvetica';
@@ -320,13 +352,107 @@ body .news-div {
           font-weight: regular;
           color: #A6ADB4;
           max-width: 380px; }
-      body .news-div .more-news article .time img {
-        width: 16px;
-        height: 16px;
-        object-fit: contain;
-        margin-right: 10px; }
       body .news-div .more-news article .time p {
         font-family: "acumin-pro";
         font-size: 13px;
         font-weight: regular;
         color: #A6ADB4; }
+
+body .container {
+  background-color: #F6F8F9; }
+  body .container .trending .trending-title {
+    margin-bottom: 40px; }
+    body .container .trending .trending-title h2 {
+      font-family: "Helvetica";
+      font-size: 24px;
+      font-weight: bold;
+      color: #202124;
+      text-transform: uppercase; }
+    body .container .trending .trending-title .arrows img {
+      height: 10px; }
+    body .container .trending .trending-title .arrows .left-arrow {
+      transform: rotate(180deg);
+      opacity: 30%; }
+    body .container .trending .trending-title .arrows .right-arrow {
+      margin-left: 40px; }
+  body .container .trending .articles-div {
+    flex-wrap: wrap; }
+    body .container .trending .articles-div .trend-art {
+      max-width: 360px;
+      border-radius: 6px;
+      background-color: #FFFFFF;
+      margin: 0 0 40px; }
+      body .container .trending .articles-div .trend-art img {
+        width: 360px;
+        height: 180px;
+        object-fit: cover;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit; }
+      body .container .trending .articles-div .trend-art .art-text {
+        padding: 40px; }
+        body .container .trending .articles-div .trend-art .art-text h4 {
+          font-family: "Helvetica";
+          font-size: 16px;
+          font-weight: bold;
+          color: #202124; }
+        body .container .trending .articles-div .trend-art .art-text p {
+          font-family: "acumin-pro";
+          font-size: 13px;
+          font-weight: regular;
+          color: #A6ADB4;
+          margin: 10px 0 15px; }
+        body .container .trending .articles-div .trend-art .art-text .time p {
+          font-family: "acumin-pro";
+          font-size: 13px;
+          font-weight: regular;
+          color: #A6ADB4; }
+  body .container .happening .happening-title {
+    margin-bottom: 40px; }
+    body .container .happening .happening-title h2 {
+      font-family: "Helvetica";
+      font-size: 24px;
+      font-weight: bold;
+      color: #202124;
+      text-transform: uppercase; }
+    body .container .happening .happening-title .arrows img {
+      height: 10px; }
+    body .container .happening .happening-title .arrows .left-arrow {
+      transform: rotate(180deg);
+      opacity: 30%; }
+    body .container .happening .happening-title .arrows .right-arrow {
+      margin-left: 40px; }
+  body .container .happening .articles-div .large-div .large-art {
+    width: 760px;
+    padding: 40px;
+    background-color: transparent;
+    margin-bottom: 40px;
+    border-radius: 6px; }
+    body .container .happening .articles-div .large-div .large-art h3 {
+      font-family: "Helvetica";
+      font-size: 24px;
+      font-weight: bold;
+      color: #FFFFFF;
+      margin-bottom: 235px;
+      text-transform: uppercase; }
+    body .container .happening .articles-div .large-div .large-art .large-text h4 {
+      font-family: "Helvetica";
+      font-size: 24px;
+      font-weight: bold;
+      color: #FFFFFF; }
+    body .container .happening .articles-div .large-div .large-art .large-text p {
+      font-family: "Helvetica";
+      font-size: 16px;
+      font-weight: regular;
+      color: #FFFFFF;
+      max-width: 680px;
+      margin: 10px 0 35px; }
+    body .container .happening .articles-div .large-div .large-art .large-text .time p {
+      font-family: "acumin-pro";
+      font-size: 13px;
+      font-weight: regular;
+      color: #A6ADB4;
+      margin: 0; }
+  body .container .happening .articles-div .large-div .city {
+    background-image: url(../images/large1.jpg); }
+  body .container .happening .articles-div .large-div .travel {
+    background-image: url(../images/large2.jpg); }

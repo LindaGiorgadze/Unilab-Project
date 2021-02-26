@@ -6,6 +6,12 @@
     margin: 0 auto;
 }
 
+%container2 {
+    max-width: $size1;
+    margin: 0 auto;
+    padding: 40px 140px;
+}
+
 %font1 {
     font-family: $font2,'sans-serif';
     font-weight: 400;
@@ -24,7 +30,20 @@
     align-items: center;
 }
 
+%flex3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 %button1 {
     border: solid 0px $color2;
     border-radius: 8px;
+}
+
+%clock {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
 }
