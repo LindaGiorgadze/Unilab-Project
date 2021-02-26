@@ -1,0 +1,49 @@
+@import '../basic/reset.scss';
+@import '../basic/fonts.scss';
+@import '../modules/variables.scss';
+@import '../modules/classes.scss';
+@import '../modules/mixins.scss';
+
+body {
+    header {
+        @include position (fixed, 0px, 0px);
+        z-index: 99;
+        width: 100%;
+        background-color: $color01;
+        .top {
+            @extend %container;
+            @include flex (flex, space-between, center);
+            padding: 10px 20px;
+            .logo {
+                @include font ($font1, $font-size1, bold, $color2);
+                text-transform: uppercase;
+            }
+            .top-nav {
+                @include flex (flex, space-between, center);
+                ul {
+                    @include flex (flex, space-between, center);
+                    li {
+                        margin-left: 25px;
+                        a {
+                            @include font ($font1, $font-size2, bold, $color1);
+                            opacity: 50%;
+                            text-transform: uppercase;
+                        }
+                        .active-page {
+                            opacity: 1;
+                        }
+                    }
+                }
+                .user {
+                    margin-left: 45px;
+                    img {
+                        height: 30px;
+                        width: 30px;
+                        object-fit: contain;
+                        clip-path: circle(50% at 50% 50%);
+                    }
+                }
+            }
+        }
+    }
+}

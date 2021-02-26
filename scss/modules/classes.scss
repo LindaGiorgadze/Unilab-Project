@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+
+%container {
+    max-width: $size1;
+    margin: 0 auto;
+}
+
+%font1 {
+    font-family: $font2,'sans-serif';
+    font-weight: 400;
+    font-style: normal;
+}
+
+%input1 {
+    border: solid 2px $color2;
+    border-radius: 8px;
+}

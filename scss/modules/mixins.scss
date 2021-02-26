@@ -1,0 +1,20 @@
+@import './variables.scss';
+
+@mixin font ($font, $size, $weight, $color){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin flex ($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin position ($absolute, $top, $left) {
+    position: $absolute;
+    top: $top;
+    left: $left;
+}
