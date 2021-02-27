@@ -61,6 +61,12 @@
     cursor:pointer;
 }
 
+%input1 {
+    background-color: transparent;
+    border-radius: 6px;
+    border: solid 2px $color6;
+}
+
 %clock {
     width: 16px;
     height: 16px;
