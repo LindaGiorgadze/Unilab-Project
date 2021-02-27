@@ -79,12 +79,12 @@ body .news-div, body .news-div .more-news .more-news-title, body .container .tre
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time, body .container .trending .articles-div .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul {
+body .news-div .more-news article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
 
-body .container .happening .articles-div .small-div, body footer .bottom .email {
+body .container .happening .articles-div .small-div, body .container .happening .articles-div .small-div .small-art, body footer .bottom .email {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -97,9 +97,15 @@ body footer .bottom, body footer .bottom .bottom-nav {
 
 body .news-div .world-news .world-news-text article button, body footer .bottom .email .input-icon {
   border: solid 0px #FA6980;
-  border-radius: 8px; }
+  border-radius: 8px;
+  cursor: pointer; }
 
-body .news-div .more-news article .time img, body .container .trending .articles-div .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img {
+body .news-div .more-news .more-news-title .arrows button, body .container .trending .trending-title .arrows button, body .container .happening .happening-title .arrows button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer; }
+
+body .news-div .more-news article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img {
   width: 16px;
   height: 16px;
   margin-right: 10px; }
@@ -213,12 +219,12 @@ body .news-div, body .news-div .more-news .more-news-title, body .container .tre
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time, body .container .trending .articles-div .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul {
+body .news-div .more-news article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
 
-body .container .happening .articles-div .small-div, body footer .bottom .email {
+body .container .happening .articles-div .small-div, body .container .happening .articles-div .small-div .small-art, body footer .bottom .email {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -231,9 +237,15 @@ body footer .bottom, body footer .bottom .bottom-nav {
 
 body .news-div .world-news .world-news-text article button, body footer .bottom .email .input-icon {
   border: solid 0px #FA6980;
-  border-radius: 8px; }
+  border-radius: 8px;
+  cursor: pointer; }
 
-body .news-div .more-news article .time img, body .container .trending .articles-div .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img {
+body .news-div .more-news .more-news-title .arrows button, body .container .trending .trending-title .arrows button, body .container .happening .happening-title .arrows button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer; }
+
+body .news-div .more-news article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img {
   width: 16px;
   height: 16px;
   margin-right: 10px; }
@@ -338,6 +350,8 @@ body {
           background-color: #FA6980;
           text-transform: uppercase;
           padding: 15px 34px; }
+        body .news-div .world-news .world-news-text article button:hover {
+          transform: scale(1.05); }
     body .news-div .more-news {
       max-width: 595px;
       margin: 100px auto; }
@@ -350,13 +364,15 @@ body {
           font-weight: bold;
           color: #202124;
           text-transform: uppercase; }
-        body .news-div .more-news .more-news-title .arrows img {
+        body .news-div .more-news .more-news-title .arrows button img {
           height: 10px; }
-        body .news-div .more-news .more-news-title .arrows .left-arrow {
+        body .news-div .more-news .more-news-title .arrows button .left-arrow {
           transform: rotate(180deg);
           opacity: 30%; }
-        body .news-div .more-news .more-news-title .arrows .right-arrow {
+        body .news-div .more-news .more-news-title .arrows button:last-child {
           margin-left: 40px; }
+        body .news-div .more-news .more-news-title .arrows button:hover {
+          transform: scale(1.5); }
       body .news-div .more-news article {
         margin-top: 40px; }
         body .news-div .more-news article h3 {
@@ -366,7 +382,7 @@ body {
           color: #FA6980;
           text-transform: uppercase;
           margin-bottom: 20px; }
-        body .news-div .more-news article h4 {
+        body .news-div .more-news article h4 a {
           font-family: "Helvetica";
           font-size: 16px;
           font-weight: bold;
@@ -396,44 +412,51 @@ body {
       font-weight: bold;
       color: #202124;
       text-transform: uppercase; }
-    body .container .trending .trending-title .arrows img {
+    body .container .trending .trending-title .arrows button img {
       height: 10px; }
-    body .container .trending .trending-title .arrows .left-arrow {
+    body .container .trending .trending-title .arrows button .left-arrow {
       transform: rotate(180deg);
       opacity: 30%; }
-    body .container .trending .trending-title .arrows .right-arrow {
+    body .container .trending .trending-title .arrows button:last-child {
       margin-left: 40px; }
+    body .container .trending .trending-title .arrows button:hover {
+      transform: scale(1.5); }
   body .container .trending .articles-div {
-    flex-wrap: wrap; }
-    body .container .trending .articles-div .trend-art {
-      max-width: 360px;
-      border-radius: 6px;
-      background-color: #FFFFFF;
-      margin: 0 0 40px; }
-      body .container .trending .articles-div .trend-art img {
-        width: 360px;
-        height: 180px;
-        object-fit: cover;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit; }
-      body .container .trending .articles-div .trend-art .art-text {
-        padding: 40px; }
-        body .container .trending .articles-div .trend-art .art-text h4 {
-          font-family: "Helvetica";
-          font-size: 16px;
-          font-weight: bold;
-          color: #202124; }
-        body .container .trending .articles-div .trend-art .art-text p {
-          font-family: "acumin-pro";
-          font-size: 13px;
-          font-weight: regular;
-          color: #A6ADB4;
-          margin: 10px 0 15px; }
-        body .container .trending .articles-div .trend-art .art-text .time p {
-          font-family: "acumin-pro";
-          font-size: 13px;
-          font-weight: regular;
-          color: #A6ADB4; }
+    overflow: hidden; }
+    body .container .trending .articles-div a {
+      margin-right: 32px; }
+      body .container .trending .articles-div a .trend-art {
+        max-width: 360px;
+        border-radius: 6px;
+        background-color: #FFFFFF;
+        margin: 0 0 40px;
+        display: inline-block; }
+        body .container .trending .articles-div a .trend-art img {
+          width: 360px;
+          height: 180px;
+          object-fit: cover;
+          border-top-left-radius: inherit;
+          border-top-right-radius: inherit; }
+        body .container .trending .articles-div a .trend-art .art-text {
+          padding: 40px; }
+          body .container .trending .articles-div a .trend-art .art-text h4 {
+            font-family: "Helvetica";
+            font-size: 16px;
+            font-weight: bold;
+            color: #202124; }
+          body .container .trending .articles-div a .trend-art .art-text p {
+            font-family: "acumin-pro";
+            font-size: 13px;
+            font-weight: regular;
+            color: #A6ADB4;
+            margin: 10px 0 15px; }
+          body .container .trending .articles-div a .trend-art .art-text .time p {
+            font-family: "acumin-pro";
+            font-size: 13px;
+            font-weight: regular;
+            color: #A6ADB4; }
+    body .container .trending .articles-div a:hover {
+      transform: scale(1.05); }
   body .container .happening {
     margin-bottom: 60px; }
     body .container .happening .happening-title {
@@ -444,13 +467,15 @@ body {
         font-weight: bold;
         color: #202124;
         text-transform: uppercase; }
-      body .container .happening .happening-title .arrows img {
+      body .container .happening .happening-title .arrows button img {
         height: 10px; }
-      body .container .happening .happening-title .arrows .left-arrow {
+      body .container .happening .happening-title .arrows button .left-arrow {
         transform: rotate(180deg);
         opacity: 30%; }
-      body .container .happening .happening-title .arrows .right-arrow {
+      body .container .happening .happening-title .arrows button:last-child {
         margin-left: 40px; }
+      body .container .happening .happening-title .arrows button:hover {
+        transform: scale(1.5); }
     body .container .happening .articles-div {
       align-items: stretch;
       flex-wrap: wrap; }
@@ -469,10 +494,14 @@ body {
             margin-bottom: 235px;
             text-transform: uppercase; }
           body .container .happening .articles-div .large-div .large-art .large-text h4 {
-            font-family: "Helvetica";
-            font-size: 24px;
-            font-weight: bold;
-            color: #FFFFFF; }
+            display: inline-block; }
+            body .container .happening .articles-div .large-div .large-art .large-text h4 a {
+              font-family: "Helvetica";
+              font-size: 24px;
+              font-weight: bold;
+              color: #FFFFFF; }
+          body .container .happening .articles-div .large-div .large-art .large-text h4:hover {
+            transform: scale(1.05); }
           body .container .happening .articles-div .large-div .large-art .large-text p {
             font-family: "Helvetica";
             font-size: 16px;
@@ -489,9 +518,13 @@ body {
         body .container .happening .articles-div .large-div .large-art:first-child {
           margin-bottom: 40px; }
         body .container .happening .articles-div .large-div .city {
-          background-image: url(../images/large1.jpg); }
+          background-image: url(../images/large1.jpg);
+          background-position: center; }
         body .container .happening .articles-div .large-div .travel {
-          background-image: url(../images/large2.jpg); }
+          background-image: url(../images/large2.jpg);
+          background-position: center; }
+        body .container .happening .articles-div .large-div .large-art:hover {
+          transform: scale(1.05); }
       body .container .happening .articles-div .small-div {
         margin-bottom: 40px; }
         body .container .happening .articles-div .small-div .small-art {
@@ -503,10 +536,14 @@ body {
             border-radius: 6px; }
           body .container .happening .articles-div .small-div .small-art h4 {
             margin: 20px 0 15px;
-            font-family: "acumin-pro";
-            font-size: 16px;
-            font-weight: bold;
-            color: #202124; }
+            display: inline-block; }
+            body .container .happening .articles-div .small-div .small-art h4 a {
+              font-family: "acumin-pro";
+              font-size: 16px;
+              font-weight: bold;
+              color: #202124; }
+          body .container .happening .articles-div .small-div .small-art h4:hover {
+            transform: scale(1.05); }
           body .container .happening .articles-div .small-div .small-art .time p {
             font-family: "acumin-pro";
             font-size: 13px;
@@ -518,6 +555,8 @@ body {
               font-weight: regular;
               color: #A6ADB4;
               text-decoration: underline; }
+        body .container .happening .articles-div .small-div .small-art:hover {
+          transform: scale(1.05); }
   body footer {
     background-color: #A6ADB4; }
     body footer .bottom {
@@ -564,6 +603,8 @@ body {
           padding: 10px 20px;
           background-color: transparent;
           border-color: transparent; }
+        body footer .bottom .email .input-icon .send-button:hover {
+          transform: scale(1.5); }
       body footer .bottom .email p {
         font-family: "Helvetica";
         font-size: 11px;

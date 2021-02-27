@@ -52,6 +52,13 @@
 %button1 {
     border: solid 0px $color2;
     border-radius: 8px;
+    cursor:pointer;
+}
+
+%button2 {
+    border: transparent;
+    background-color: transparent;
+    cursor:pointer;
 }
 
 %clock {
