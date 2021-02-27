@@ -5,6 +5,7 @@
 @import '../modules/mixins.scss';
 
 body {
+    background-color: $color01;
     header {
         @include position (fixed, 0px, 0px);
         z-index: 99;
@@ -49,7 +50,9 @@ body {
     .news-div {
         @extend %flex1;
         @extend %container;
+        flex-wrap: wrap;
         margin-top: 53px;
+        background-color: $color3;
         .world-news {
             max-width: 835px;
             padding: 175px 140px;
@@ -87,7 +90,7 @@ body {
         }
         .more-news {
             max-width: 595px;
-            padding: 100px 120px 100px;
+            margin: 100px auto;
             .more-news-title {
                 @extend %flex1;
                 padding-bottom: 40px;
@@ -144,7 +147,6 @@ body {
     }
     .container {
         @extend %container2;
-        background-color: $color01;
         .trending {
             .trending-title {
                 @extend %flex1;
@@ -205,6 +207,7 @@ body {
             }
         }
         .happening {
+            margin-bottom: 60px;
             .happening-title {
                 @extend %flex1;
                 margin-bottom: 40px;
@@ -299,6 +302,81 @@ body {
                                     text-decoration: underline;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        background-color: $color02;
+        .bottom {
+            @extend %container3;
+            @extend %flex4;
+            flex-wrap: wrap;
+            .bottom-nav {
+                @extend %flex4;
+                margin-bottom: 5px;
+                .logo {
+                    @include font ($font1, $font-size1, bold, $color3);
+                    text-transform: uppercase;
+                    margin-right: 55px;
+                    line-height: 20px;
+                }
+                .bottom-ul {
+                    @extend %flex2;
+                    flex-wrap: wrap;
+                    max-width: 290px;
+                    .bottom-nav-li {
+                        margin-right: 45px;
+                        margin-bottom: 10px;
+                        width: 35px;
+                        flex-grow: 1;
+                        a {
+                            @include font ($font1, $font-size1, bold, $color7);
+                        }
+                    }
+                }
+            }
+            .email {
+                @extend%flex3;
+                .input-icon {
+                    width: 100%;
+                    border-radius: 6px;
+                    border: solid 2px $color03;
+                    @extend %button1;
+                    @extend %flex1;
+                    margin-bottom: 15px;
+                    input {
+                        background-color: transparent;
+                        border:transparent;
+                        padding: 15px 20px;
+                        width: 100%;
+                    }
+                    input::placeholder {
+                        @include font ($font1, $font-size1, normal, $color7);
+                    }
+                    .send-button {
+                        padding: 10px 20px;
+                        background-color: transparent;
+                        border-color: transparent;
+                        img {
+                            @extend %icon;
+                        }
+                    }
+                }
+                p {
+                    @include font ($font1, $font-size2, regular, $color7);
+                }
+            }
+            .social-icons {
+                .social-ul {
+                    @extend %flex1;
+                    .social-li {
+                        margin-left: 30px;
+                        img {
+                            @extend %icon;
+                            object-fit: contain;
                         }
                     }
                 }

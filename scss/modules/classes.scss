@@ -12,6 +12,12 @@
     padding: 40px 140px;
 }
 
+%container3 {
+    max-width: $size1;
+    margin: 0 auto;
+    padding: 55px 140px;
+}
+
 %font1 {
     font-family: $font2,'sans-serif';
     font-weight: 400;
@@ -37,6 +43,12 @@
     flex-direction: column;
 }
 
+%flex4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 %button1 {
     border: solid 0px $color2;
     border-radius: 8px;
@@ -46,4 +58,9 @@
     width: 16px;
     height: 16px;
     margin-right: 10px;
+}
+
+%icon {
+    width: 16px;
+    height: 16px;
 }
