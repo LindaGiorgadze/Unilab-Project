@@ -79,18 +79,18 @@ body .news-div, body .news-div .more-news .more-news-title, body .container .tre
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul {
+body .news-div .more-news article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul, body .container .text-box .text .time {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
 
-body .container .happening .articles-div .small-div, body .container .happening .articles-div .small-div .small-art, body footer .bottom .email {
+body .container .happening .articles-div .small-div, body .container .happening .articles-div .small-div .small-art, body footer .bottom .email, body .container .text-box .author-title {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column; }
 
-body footer .bottom, body footer .bottom .bottom-nav {
+body footer .bottom, body footer .bottom .bottom-nav, body .container .text-box {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
@@ -110,7 +110,7 @@ body .story-div .story-search .search .inputs-box .input input {
   border-radius: 6px;
   border: solid 2px #EBEDED; }
 
-body .news-div .more-news article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img {
+body .news-div .more-news article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img, body .container .text-box .text .time img {
   width: 16px;
   height: 16px;
   margin-right: 10px; }
@@ -224,18 +224,18 @@ body .news-div, body .news-div .more-news .more-news-title, body .container .tre
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul {
+body .news-div .more-news article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul, body .container .text-box .text .time {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
 
-body .container .happening .articles-div .small-div, body .container .happening .articles-div .small-div .small-art, body footer .bottom .email {
+body .container .happening .articles-div .small-div, body .container .happening .articles-div .small-div .small-art, body footer .bottom .email, body .container .text-box .author-title {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column; }
 
-body footer .bottom, body footer .bottom .bottom-nav {
+body footer .bottom, body footer .bottom .bottom-nav, body .container .text-box {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
@@ -255,7 +255,7 @@ body .story-div .story-search .search .inputs-box .input input {
   border-radius: 6px;
   border: solid 2px #EBEDED; }
 
-body .news-div .more-news article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img {
+body .news-div .more-news article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img, body .container .text-box .text .time img {
   width: 16px;
   height: 16px;
   margin-right: 10px; }
@@ -714,18 +714,18 @@ body .news-div, body .news-div .more-news .more-news-title, body .container .tre
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul {
+body .news-div .more-news article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul, body .container .text-box .text .time {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
 
-body .container .happening .articles-div .small-div, body .container .happening .articles-div .small-div .small-art, body footer .bottom .email {
+body .container .happening .articles-div .small-div, body .container .happening .articles-div .small-div .small-art, body footer .bottom .email, body .container .text-box .author-title {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column; }
 
-body footer .bottom, body footer .bottom .bottom-nav {
+body footer .bottom, body footer .bottom .bottom-nav, body .container .text-box {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
@@ -745,7 +745,7 @@ body .story-div .story-search .search .inputs-box .input input {
   border-radius: 6px;
   border: solid 2px #EBEDED; }
 
-body .news-div .more-news article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img {
+body .news-div .more-news article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img, body .container .text-box .text .time img {
   width: 16px;
   height: 16px;
   margin-right: 10px; }
@@ -869,3 +869,54 @@ body .story-div {
           padding: 15px 45px; }
         body .story-div .story-search .search .inputs-box .search-button:hover {
           transform: scale(1.05); }
+
+body .container {
+  padding-top: 0; }
+  body .container .text-box {
+    padding: 40px 0;
+    margin-bottom: 40px;
+    border-top: solid 2px #EBEDED;
+    border-bottom: solid 2px #EBEDED; }
+    body .container .text-box .author-title {
+      margin-right: 75px; }
+      body .container .text-box .author-title .author {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        clip-path: circle(50% at 50% 50%);
+        border-radius: 50%;
+        margin-bottom: 20px; }
+      body .container .text-box .author-title .title {
+        font-family: "acumin-pro";
+        font-size: 24px;
+        font-weight: bold;
+        color: #202124;
+        line-height: 34px; }
+    body .container .text-box .text {
+      column-count: 2;
+      max-width: 735px; }
+      body .container .text-box .text p {
+        font-family: "Helvetica";
+        font-size: 14px;
+        font-weight: normal;
+        color: #A6ADB4;
+        line-height: 26px; }
+      body .container .text-box .text .time {
+        margin-top: 20px; }
+        body .container .text-box .text .time img {
+          margin-right: 8px; }
+  body .container .world-article {
+    border-bottom: solid 2px #EBEDED;
+    margin-bottom: 160px; }
+    body .container .world-article img {
+      width: 100%;
+      border-radius: 6px; }
+    body .container .world-article pre {
+      font-family: "Helvetica";
+      font-size: 14px;
+      font-weight: normal;
+      color: #A6ADB4;
+      line-height: 26px;
+      margin: 40px 0;
+      max-width: 760px;
+      white-space: pre-wrap; }

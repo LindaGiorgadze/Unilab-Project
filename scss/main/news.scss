@@ -138,4 +138,61 @@ body {
             }
         }
     }
+    .container {
+        padding-top: 0;
+        .text-box {
+            @extend %flex4;
+            padding: 40px 0;
+            margin-bottom: 40px;
+            border-top: solid 2px $color6;
+            border-bottom: solid 2px $color6;
+            .author-title {
+                @extend %flex3;
+                margin-right: 75px;
+                .author {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    clip-path: circle(50% at 50% 50%);
+                    border-radius: 50%;
+                    margin-bottom: 20px;
+                }
+                .title {
+                    @include font ($font2, $font-size3, bold, $color5);
+                    line-height: 34px;
+                }
+            }
+            .text {
+                column-count: 2;
+                max-width: 735px;
+                p {
+                    @include font ($font1, 14px, normal, $color4);
+                    line-height: 26px;
+                }
+                .time {
+                    @extend %flex2;
+                    margin-top: 20px;
+                    img {
+                        margin-right: 8px;
+                        @extend %clock;
+                    }
+                }
+            }
+        }
+        .world-article {
+            border-bottom: solid 2px $color6;
+            margin-bottom: 160px;
+            img {
+                width: 100%;
+                border-radius: 6px;
+            }
+            pre {
+                @include font($font1, $font-size6, normal, $color4);
+                line-height: 26px;
+                margin: 40px 0;
+                max-width: 760px;
+                white-space: pre-wrap;
+            }
+        }
+    }
 }
