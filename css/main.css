@@ -856,9 +856,16 @@ body .story-div {
             font-weight: bold;
             color: #202124; }
           body .story-div .story-search .search .inputs-box .input input {
+            font-family: "Helvetica";
+            font-size: 13px;
+            font-weight: normal;
+            color: #A6ADB4;
             padding: 10px 20px;
             width: 100%;
             margin-top: 10px; }
+          body .story-div .story-search .search .inputs-box .input .date::-webkit-calendar-picker-indicator {
+            background-image: url(../images/dropdown.svg);
+            background-position: center; }
         body .story-div .story-search .search .inputs-box .search-button {
           font-family: "Helvetica";
           font-size: 11px;

@@ -119,9 +119,14 @@ body {
                         }
                         input {
                             @extend %input1;
+                            @include font ($font1, $font-size1, normal, $color4);
                             padding: 10px 20px;
                             width: 100%;
                             margin-top: 10px;
+                        }
+                        .date::-webkit-calendar-picker-indicator {
+                            background-image: url(../images/dropdown.svg);
+                            background-position: center;
                         }
                     }
                     .search-button {
