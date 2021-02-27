@@ -74,12 +74,12 @@ body .news-div, body .news-div .more-news .more-news-title, body .container .tre
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time, body .container .trending .articles-div .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time {
+body .news-div .more-news article .time, body .container .trending .articles-div .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
 
-body .container .happening .articles-div .large-div {
+body .container .happening .articles-div .small-div {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -89,7 +89,7 @@ body .news-div .world-news .world-news-text article button {
   border: solid 0px #FA6980;
   border-radius: 8px; }
 
-body .news-div .more-news article .time img, body .container .trending .articles-div .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img {
+body .news-div .more-news article .time img, body .container .trending .articles-div .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img {
   width: 16px;
   height: 16px;
   margin-right: 10px; }
@@ -194,12 +194,12 @@ body .news-div, body .news-div .more-news .more-news-title, body .container .tre
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time, body .container .trending .articles-div .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time {
+body .news-div .more-news article .time, body .container .trending .articles-div .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
 
-body .container .happening .articles-div .large-div {
+body .container .happening .articles-div .small-div {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -209,7 +209,7 @@ body .news-div .world-news .world-news-text article button {
   border: solid 0px #FA6980;
   border-radius: 8px; }
 
-body .news-div .more-news article .time img, body .container .trending .articles-div .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img {
+body .news-div .more-news article .time img, body .container .trending .articles-div .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img {
   width: 16px;
   height: 16px;
   margin-right: 10px; }
@@ -421,38 +421,70 @@ body .container {
       opacity: 30%; }
     body .container .happening .happening-title .arrows .right-arrow {
       margin-left: 40px; }
-  body .container .happening .articles-div .large-div .large-art {
-    width: 760px;
-    padding: 40px;
-    background-color: transparent;
-    margin-bottom: 40px;
-    border-radius: 6px; }
-    body .container .happening .articles-div .large-div .large-art h3 {
-      font-family: "Helvetica";
-      font-size: 24px;
-      font-weight: bold;
-      color: #FFFFFF;
-      margin-bottom: 235px;
-      text-transform: uppercase; }
-    body .container .happening .articles-div .large-div .large-art .large-text h4 {
-      font-family: "Helvetica";
-      font-size: 24px;
-      font-weight: bold;
-      color: #FFFFFF; }
-    body .container .happening .articles-div .large-div .large-art .large-text p {
-      font-family: "Helvetica";
-      font-size: 16px;
-      font-weight: regular;
-      color: #FFFFFF;
-      max-width: 680px;
-      margin: 10px 0 35px; }
-    body .container .happening .articles-div .large-div .large-art .large-text .time p {
-      font-family: "acumin-pro";
-      font-size: 13px;
-      font-weight: regular;
-      color: #A6ADB4;
-      margin: 0; }
-  body .container .happening .articles-div .large-div .city {
-    background-image: url(../images/large1.jpg); }
-  body .container .happening .articles-div .large-div .travel {
-    background-image: url(../images/large2.jpg); }
+  body .container .happening .articles-div {
+    align-items: stretch;
+    flex-wrap: wrap; }
+    body .container .happening .articles-div .large-div {
+      margin-bottom: 40px; }
+      body .container .happening .articles-div .large-div .large-art {
+        width: 760px;
+        padding: 40px;
+        background-color: transparent;
+        border-radius: 6px; }
+        body .container .happening .articles-div .large-div .large-art h3 {
+          font-family: "Helvetica";
+          font-size: 24px;
+          font-weight: bold;
+          color: #FFFFFF;
+          margin-bottom: 235px;
+          text-transform: uppercase; }
+        body .container .happening .articles-div .large-div .large-art .large-text h4 {
+          font-family: "Helvetica";
+          font-size: 24px;
+          font-weight: bold;
+          color: #FFFFFF; }
+        body .container .happening .articles-div .large-div .large-art .large-text p {
+          font-family: "Helvetica";
+          font-size: 16px;
+          font-weight: regular;
+          color: #FFFFFF;
+          max-width: 680px;
+          margin: 10px 0 35px; }
+        body .container .happening .articles-div .large-div .large-art .large-text .time p {
+          font-family: "acumin-pro";
+          font-size: 13px;
+          font-weight: regular;
+          color: #A6ADB4;
+          margin: 0; }
+      body .container .happening .articles-div .large-div .large-art:first-child {
+        margin-bottom: 40px; }
+      body .container .happening .articles-div .large-div .city {
+        background-image: url(../images/large1.jpg); }
+      body .container .happening .articles-div .large-div .travel {
+        background-image: url(../images/large2.jpg); }
+    body .container .happening .articles-div .small-div {
+      margin-bottom: 40px; }
+      body .container .happening .articles-div .small-div .small-art {
+        margin-bottom: 40px; }
+        body .container .happening .articles-div .small-div .small-art img {
+          width: 360px;
+          height: 210px;
+          object-fit: cover;
+          border-radius: 6px; }
+        body .container .happening .articles-div .small-div .small-art h4 {
+          margin: 20px 0 15px;
+          font-family: "acumin-pro";
+          font-size: 16px;
+          font-weight: bold;
+          color: #202124; }
+        body .container .happening .articles-div .small-div .small-art .time p {
+          font-family: "acumin-pro";
+          font-size: 13px;
+          font-weight: regular;
+          color: #A6ADB4; }
+          body .container .happening .articles-div .small-div .small-art .time p a {
+            font-family: "acumin-pro";
+            font-size: 13px;
+            font-weight: regular;
+            color: #A6ADB4;
+            text-decoration: underline; }

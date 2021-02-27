@@ -227,13 +227,14 @@ body {
             }
             .articles-div {
                 @extend %flex1;
+                align-items: stretch;
+                flex-wrap: wrap;
                 .large-div {
-                    @extend %flex3;
+                    margin-bottom: 40px;
                     .large-art {
                         width: 760px;
                         padding: 40px;
                         background-color: transparent;
-                        margin-bottom: 40px;
                         border-radius: 6px;
                         h3 {
                             @include font ($font1, $font-size3, bold, $color3);
@@ -261,6 +262,9 @@ body {
                             }
                         }
                     }
+                    .large-art:first-child {
+                        margin-bottom: 40px;
+                    }
                     .city {
                         background-image: url(../images/large1.jpg);
                     }
@@ -268,7 +272,36 @@ body {
                         background-image: url(../images/large2.jpg);
                     }
                 }
-
+                .small-div {
+                    @extend %flex3;
+                    margin-bottom: 40px;
+                    .small-art {
+                        margin-bottom: 40px;
+                        img {
+                            width: 360px;
+                            height: 210px;
+                            object-fit: cover;
+                            border-radius: 6px;
+                        }
+                        h4 {
+                            margin: 20px 0 15px;
+                            @include font ($font2, $font-size4, bold, $color5);
+                        }
+                        .time {
+                            @extend %flex2;
+                            img {
+                                @extend %clock;
+                            }
+                            p {
+                                @include font ($font2, $font-size1, regular, $color4);
+                                a {
+                                    @include font ($font2, $font-size1, regular, $color4);
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
