@@ -143,8 +143,9 @@ body {
             }
         }
     }
-    .container {
+    .container-2 {
         padding-top: 0;
+        @extend %container2;
         .text-box {
             @extend %flex4;
             padding: 40px 0;
