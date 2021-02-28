@@ -1,0 +1,86 @@
+@import '../modules/variables.scss';
+@import '../modules/classes.scss';
+@import '../modules/mixins.scss';
+
+//For 1024 Resolution
+@media (max-width: 1024px) {
+    body {
+        .news-div {
+            .world-news {
+                max-width: 100%;
+            }
+            .more-news {
+                max-width: 100%;
+                .articles-box {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    article {
+                        margin-right: 40px;
+                        .box {
+                            max-width: 285px;
+                        }
+                    }
+                }
+            }
+        }
+        .container {
+            .trending {
+                .articles-div {
+                    overflow: hidden;
+                    a{
+                        margin-right: 40px;
+                        .trend-art {
+                            img {
+                                width: 284px;
+                                height: 180px;
+                            }
+                        }                 
+                    }
+                }
+            }
+            .happening {
+                .articles-div {
+                    .large-div {
+                        .large-art {
+                            width: 100%;
+                            h3 {
+                                margin-bottom: 225px;
+                            }
+                            .large-text {
+                                p {
+                                    -webkit-line-clamp: 2;
+                                    margin: 10px 0;
+                                }
+                            }
+                        }
+                    }
+                    .small-div {
+                        width: 100%;
+                        flex-direction: row;
+                        overflow: hidden;
+                        .small-art {
+                            margin-right: 40px;
+                            img {
+                                width: 285px;
+                                height: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .bottom {
+                .bottom-nav {
+                    margin-bottom: 50px;
+                    width: 100%;
+                }
+                .social-icons {
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+}

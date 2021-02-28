@@ -1,5 +1,3 @@
-@import '../basic/reset.scss';
-@import '../basic/fonts.scss';
 @import '../modules/variables.scss';
 @import '../modules/classes.scss';
 @import '../modules/mixins.scss';
@@ -121,36 +119,39 @@ body {
                     }
                 }
             }
-            article {
-                margin-top: 40px; 
-                h3 {
-                    @include font ($font1, $font-size4, bold, $color2);
-                    text-transform: uppercase;
-                    margin-bottom: 20px;
-                }
-                h4 {
-                    a {
-                        @include font ($font1, $font-size4, bold, $color5);
+            .articles-box {
+                article {
+                    margin-top: 40px; 
+                    h3 {
+                        @include font ($font1, $font-size4, bold, $color2);
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
                     }
-                }
-                .box {
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;   
-                    -webkit-box-orient: vertical;     
-                    overflow: hidden;
-                    margin: 13px 0 12px;
-                    p {
-                        @include font ($font2, $font-size4, regular, $color4);
-                        max-width: 380px;
+                    h4 {
+                        a {
+                            @include font ($font1, $font-size4, bold, $color5);
+                        }
                     }
-                }
-                .time {
-                    @extend %flex2;
-                    img {
-                        @extend %clock;
+                    .box {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;   
+                        -webkit-box-orient: vertical;     
+                        overflow: hidden;
+                        margin: 13px 0 12px;
+                        p {
+                            @include font ($font2, $font-size4, regular, $color4);
+                            max-width: 380px;
+                            line-height: 26px;
+                        }
                     }
-                    p {
-                        @include font ($font2, $font-size1, regular, $color4);
+                    .time {
+                        @extend %flex2;
+                        img {
+                            @extend %clock;
+                        }
+                        p {
+                            @include font ($font2, $font-size1, regular, $color4);
+                        }
                     }
                 }
             }
@@ -211,6 +212,11 @@ body {
                             p {
                                 @include font ($font2, $font-size1, regular, $color4);
                                 margin: 10px 0 15px;
+                                line-height: 23px;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;   
+                                -webkit-box-orient: vertical;     
+                                overflow: hidden;
                             }
                             .time {
                                 @extend %flex2;
@@ -288,6 +294,10 @@ body {
                                 @include font ($font1, $font-size4, regular, $color3);
                                 max-width: 680px;
                                 margin: 10px 0 35px;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;   
+                                -webkit-box-orient: vertical;     
+                                overflow: hidden;
                             }
                             .time {
                                 @extend %flex2;
@@ -390,12 +400,12 @@ body {
                 }
             }
             .email {
-                @extend%flex3;
+                @extend %flex3;
                 .input-icon {
                     width: 100%;
                     border-radius: 6px;
                     border: solid 2px $color03;
-                    @extend %button1;
+                    cursor:pointer;
                     @extend %flex1;
                     margin-bottom: 15px;
                     input {

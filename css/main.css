@@ -79,7 +79,7 @@ body .news-div, body .news-div .more-news .more-news-title, body .container .tre
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul, body .container-2 .text-box .text .time {
+body .news-div .more-news .articles-box article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul, body .container-2 .text-box .text .time {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
@@ -95,7 +95,7 @@ body footer .bottom, body footer .bottom .bottom-nav, body .container-2 .text-bo
   justify-content: space-between;
   align-items: flex-start; }
 
-body .news-div .world-news .world-news-text article button, body footer .bottom .email .input-icon, body .story-div .story-search .search .inputs-box .search-button {
+body .news-div .world-news .world-news-text article button, body .story-div .story-search .search .inputs-box .search-button {
   border: solid 0px #FA6980;
   border-radius: 8px;
   cursor: pointer; }
@@ -110,7 +110,7 @@ body .story-div .story-search .search .inputs-box .input input {
   border-radius: 6px;
   border: solid 2px #EBEDED; }
 
-body .news-div .more-news article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img, body .container-2 .text-box .text .time img {
+body .news-div .more-news .articles-box article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img, body .container-2 .text-box .text .time img {
   width: 16px;
   height: 16px;
   margin-right: 10px; }
@@ -126,60 +126,6 @@ body footer .bottom .email .input-icon .send-button img, body footer .bottom .so
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
-
-@font-face {
-  font-family: 'Helvetica';
-  src: url("../fonts/helvetica/Helvetica.eot");
-  src: url("../fonts/helvetica/Helvetica.eot") format("embedded-opentype"), url("../fonts/helvetica/Helvetica.woff2") format("woff2"), url("../fonts/helvetica/Helvetica.woff") format("woff"), url("../fonts/helvetica/Helvetica.ttf") format("truetype"), url("../fonts/helvetica/Helvetica.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-a {
-  text-decoration: none; }
-
-button {
-  outline: none; }
-
-* {
-  box-sizing: border-box; }
 
 @font-face {
   font-family: 'Helvetica';
@@ -224,7 +170,7 @@ body .news-div, body .news-div .more-news .more-news-title, body .container .tre
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul, body .container-2 .text-box .text .time {
+body .news-div .more-news .articles-box article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul, body .container-2 .text-box .text .time {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
@@ -240,7 +186,7 @@ body footer .bottom, body footer .bottom .bottom-nav, body .container-2 .text-bo
   justify-content: space-between;
   align-items: flex-start; }
 
-body .news-div .world-news .world-news-text article button, body footer .bottom .email .input-icon, body .story-div .story-search .search .inputs-box .search-button {
+body .news-div .world-news .world-news-text article button, body .story-div .story-search .search .inputs-box .search-button {
   border: solid 0px #FA6980;
   border-radius: 8px;
   cursor: pointer; }
@@ -255,7 +201,7 @@ body .story-div .story-search .search .inputs-box .input input {
   border-radius: 6px;
   border: solid 2px #EBEDED; }
 
-body .news-div .more-news article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img, body .container-2 .text-box .text .time img {
+body .news-div .more-news .articles-box article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img, body .container-2 .text-box .text .time img {
   width: 16px;
   height: 16px;
   margin-right: 10px; }
@@ -383,33 +329,34 @@ body {
           margin-left: 40px; }
         body .news-div .more-news .more-news-title .arrows button:hover {
           transform: scale(1.5); }
-      body .news-div .more-news article {
+      body .news-div .more-news .articles-box article {
         margin-top: 40px; }
-        body .news-div .more-news article h3 {
+        body .news-div .more-news .articles-box article h3 {
           font-family: "Helvetica";
           font-size: 16px;
           font-weight: bold;
           color: #FA6980;
           text-transform: uppercase;
           margin-bottom: 20px; }
-        body .news-div .more-news article h4 a {
+        body .news-div .more-news .articles-box article h4 a {
           font-family: "Helvetica";
           font-size: 16px;
           font-weight: bold;
           color: #202124; }
-        body .news-div .more-news article .box {
+        body .news-div .more-news .articles-box article .box {
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
           margin: 13px 0 12px; }
-          body .news-div .more-news article .box p {
+          body .news-div .more-news .articles-box article .box p {
             font-family: "acumin-pro";
             font-size: 16px;
             font-weight: regular;
             color: #A6ADB4;
-            max-width: 380px; }
-        body .news-div .more-news article .time p {
+            max-width: 380px;
+            line-height: 26px; }
+        body .news-div .more-news .articles-box article .time p {
           font-family: "acumin-pro";
           font-size: 13px;
           font-weight: regular;
@@ -459,7 +406,12 @@ body {
             font-size: 13px;
             font-weight: regular;
             color: #A6ADB4;
-            margin: 10px 0 15px; }
+            margin: 10px 0 15px;
+            line-height: 23px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden; }
           body .container .trending .articles-div a .trend-art .art-text .time p {
             font-family: "acumin-pro";
             font-size: 13px;
@@ -518,7 +470,11 @@ body {
             font-weight: regular;
             color: #FFFFFF;
             max-width: 680px;
-            margin: 10px 0 35px; }
+            margin: 10px 0 35px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden; }
           body .container .happening .articles-div .large-div .large-art .large-text .time p {
             font-family: "acumin-pro";
             font-size: 13px;
@@ -598,6 +554,7 @@ body {
         width: 100%;
         border-radius: 6px;
         border: solid 2px #ffffff1a;
+        cursor: pointer;
         margin-bottom: 15px; }
         body footer .bottom .email .input-icon input {
           background-color: transparent;
@@ -624,60 +581,6 @@ body {
         margin-left: 30px; }
         body footer .bottom .social-icons .social-ul .social-li img {
           object-fit: contain; }
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-a {
-  text-decoration: none; }
-
-button {
-  outline: none; }
-
-* {
-  box-sizing: border-box; }
-
-@font-face {
-  font-family: 'Helvetica';
-  src: url("../fonts/helvetica/Helvetica.eot");
-  src: url("../fonts/helvetica/Helvetica.eot") format("embedded-opentype"), url("../fonts/helvetica/Helvetica.woff2") format("woff2"), url("../fonts/helvetica/Helvetica.woff") format("woff"), url("../fonts/helvetica/Helvetica.ttf") format("truetype"), url("../fonts/helvetica/Helvetica.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
 
 @font-face {
   font-family: 'Helvetica';
@@ -714,7 +617,7 @@ body .news-div, body .news-div .more-news .more-news-title, body .container .tre
   justify-content: space-between;
   align-items: center; }
 
-body .news-div .more-news article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul, body .container-2 .text-box .text .time {
+body .news-div .more-news .articles-box article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul, body .container-2 .text-box .text .time {
   display: flex;
   justify-content: flex-start;
   align-items: center; }
@@ -730,7 +633,7 @@ body footer .bottom, body footer .bottom .bottom-nav, body .container-2 .text-bo
   justify-content: space-between;
   align-items: flex-start; }
 
-body .news-div .world-news .world-news-text article button, body footer .bottom .email .input-icon, body .story-div .story-search .search .inputs-box .search-button {
+body .news-div .world-news .world-news-text article button, body .story-div .story-search .search .inputs-box .search-button {
   border: solid 0px #FA6980;
   border-radius: 8px;
   cursor: pointer; }
@@ -745,7 +648,7 @@ body .story-div .story-search .search .inputs-box .input input {
   border-radius: 6px;
   border: solid 2px #EBEDED; }
 
-body .news-div .more-news article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img, body .container-2 .text-box .text .time img {
+body .news-div .more-news .articles-box article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img, body .container-2 .text-box .text .time img {
   width: 16px;
   height: 16px;
   margin-right: 10px; }
@@ -927,3 +830,129 @@ body .container-2 {
       margin: 40px 0;
       max-width: 760px;
       white-space: pre-wrap; }
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/helvetica/Helvetica.eot");
+  src: url("../fonts/helvetica/Helvetica.eot") format("embedded-opentype"), url("../fonts/helvetica/Helvetica.woff2") format("woff2"), url("../fonts/helvetica/Helvetica.woff") format("woff"), url("../fonts/helvetica/Helvetica.ttf") format("truetype"), url("../fonts/helvetica/Helvetica.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/helvetica/Helvetica.eot");
+  src: url("../fonts/helvetica/Helvetica.eot") format("embedded-opentype"), url("../fonts/helvetica/Helvetica.woff2") format("woff2"), url("../fonts/helvetica/Helvetica.woff") format("woff"), url("../fonts/helvetica/Helvetica.ttf") format("truetype"), url("../fonts/helvetica/Helvetica.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+body header .top, body .news-div {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+body .container, body .story-div, body .container-2 {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 140px; }
+
+body footer .bottom {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 55px 140px; }
+
+body .news-div, body .news-div .more-news .more-news-title, body .container .trending .trending-title, body .container .trending .articles-div, body .container .happening .happening-title, body .container .happening .articles-div, body footer .bottom .email .input-icon, body footer .bottom .social-icons .social-ul, body .story-div .story-div-title, body .story-div .story-div-title .nest, body .story-div .story-div-title .nest .nest-nav ul, body .story-div .story-search, body .story-div .story-search .story .story-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+body .news-div .more-news .articles-box article .time, body .container .trending .articles-div a .trend-art .art-text .time, body .container .happening .articles-div .large-div .large-art .large-text .time, body .container .happening .articles-div .small-div .small-art .time, body footer .bottom .bottom-nav .bottom-ul, body .container-2 .text-box .text .time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+body .container .happening .articles-div .small-div, body .container .happening .articles-div .small-div .small-art, body footer .bottom .email, body .container-2 .text-box .author-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column; }
+
+body footer .bottom, body footer .bottom .bottom-nav, body .container-2 .text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+body .news-div .world-news .world-news-text article button, body .story-div .story-search .search .inputs-box .search-button {
+  border: solid 0px #FA6980;
+  border-radius: 8px;
+  cursor: pointer; }
+
+body .news-div .more-news .more-news-title .arrows button, body .container .trending .trending-title .arrows button, body .container .happening .happening-title .arrows button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer; }
+
+body .story-div .story-search .search .inputs-box .input input {
+  background-color: transparent;
+  border-radius: 6px;
+  border: solid 2px #EBEDED; }
+
+body .news-div .more-news .articles-box article .time img, body .container .trending .articles-div a .trend-art .art-text .time img, body .container .happening .articles-div .large-div .large-art .large-text .time img, body .container .happening .articles-div .small-div .small-art .time img, body .container-2 .text-box .text .time img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px; }
+
+body footer .bottom .email .input-icon .send-button img, body footer .bottom .social-icons .social-ul .social-li img, body .story-div .story-div-title .nest a img, body .story-div .story-div-title button .filter {
+  width: 16px;
+  height: 16px; }
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/helvetica/Helvetica.eot");
+  src: url("../fonts/helvetica/Helvetica.eot") format("embedded-opentype"), url("../fonts/helvetica/Helvetica.woff2") format("woff2"), url("../fonts/helvetica/Helvetica.woff") format("woff"), url("../fonts/helvetica/Helvetica.ttf") format("truetype"), url("../fonts/helvetica/Helvetica.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@media (max-width: 1024px) {
+  body .news-div .world-news {
+    max-width: 100%; }
+  body .news-div .more-news {
+    max-width: 100%; }
+    body .news-div .more-news .articles-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap; }
+      body .news-div .more-news .articles-box article {
+        margin-right: 40px; }
+        body .news-div .more-news .articles-box article .box {
+          max-width: 285px; }
+  body .container .trending .articles-div {
+    overflow: hidden; }
+    body .container .trending .articles-div a {
+      margin-right: 40px; }
+      body .container .trending .articles-div a .trend-art img {
+        width: 284px;
+        height: 180px; }
+  body .container .happening .articles-div .large-div .large-art {
+    width: 100%; }
+    body .container .happening .articles-div .large-div .large-art h3 {
+      margin-bottom: 225px; }
+    body .container .happening .articles-div .large-div .large-art .large-text p {
+      -webkit-line-clamp: 2;
+      margin: 10px 0; }
+  body .container .happening .articles-div .small-div {
+    width: 100%;
+    flex-direction: row;
+    overflow: hidden; }
+    body .container .happening .articles-div .small-div .small-art {
+      margin-right: 40px; }
+      body .container .happening .articles-div .small-div .small-art img {
+        width: 285px;
+        height: 180px; }
+  body footer .bottom .bottom-nav {
+    margin-bottom: 50px;
+    width: 100%; }
+  body footer .bottom .social-icons {
+    align-self: flex-end; } }
