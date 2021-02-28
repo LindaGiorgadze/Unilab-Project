@@ -1,0 +1,110 @@
+
+
+// For 1024 Resolution
+@media (max-width: 1024px) {
+    body {
+        .container-2 {
+            .text-box {
+                .author-title {
+                    margin-right: 55px;
+                }
+                .text {
+                    column-count: 2;
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}
+
+// For 770 Resolution
+@media (max-width: 770px) {
+    body {
+        .story-div {
+            margin: 53px auto;
+            padding: 0 80px;
+            .story-search {
+                flex-wrap: wrap;
+                .story {
+                    width: 100%;
+                }
+                .search {
+                    width: 100%;
+                    padding: 85px 80px;
+                }
+            }
+        }
+        .container-2 {
+            margin: 53px auto;
+            padding: 0 80px;
+            .text-box {
+                flex-direction: column;
+                .author-title {
+                    margin-bottom: 44px;
+                    .title {
+                        max-width: 260px;
+                    }
+                }
+            }
+            .world-article {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+// For 380 Resolution
+@media (max-width: 380px) {
+    body {
+        .story-div {
+            margin: 53px auto 40px;
+            padding: 0;
+            .story-search {
+                .story {
+                    width: 100%;
+                    img {
+                        max-height: 388px;
+                    }
+                    .story-text {
+                        width: 100%;
+                        padding: 0 25px;
+                        h2 {
+                            text-align: center;
+                        }
+                        p {
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            max-height: unset;
+                            text-align: center;
+                        }
+                    }
+                }
+                .search {
+                    width: 100%;
+                    padding: 40px 25px;
+                }
+            }
+        }
+        .container-2 {
+            margin: 50px auto;
+            width: 100%;
+            padding: 40px 25px;
+            .text-box {
+                flex-direction: column;
+                .author-title {
+                    margin-bottom: 44px;
+                    width: 100%;
+                    .title {
+                        max-width: 100%;
+                    }
+                }
+                .text {
+                    column-count: 1;
+                    column-gap: 40px;
+                }
+            }
+        }
+    }
+}

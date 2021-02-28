@@ -5,8 +5,8 @@
 body {
     .story-div {
         @extend %container2;
-        margin-top: 53px;
         .story-div-title {
+            padding-top: 20px;
             @extend %flex1;
             padding-bottom: 30px;
             .nest {

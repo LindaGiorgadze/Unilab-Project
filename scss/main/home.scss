@@ -17,6 +17,9 @@ body {
                 @include font ($font1, $font-size1, bold, $color2);
                 text-transform: uppercase;
             }
+            .hide {
+                display: none;
+            }
             .top-nav {
                 @include flex (flex, space-between, center);
                 ul {
@@ -30,6 +33,85 @@ body {
                         }
                         .active-page {
                             opacity: 1;
+                        }
+                    }
+                }
+                .hide {
+                    display: none;
+                }
+                .burger {
+                    display: none;
+                    margin: 55px 15px 15px 15px;
+                    span {
+                        display: block;
+                        margin: 2px;
+                        height: 2px;
+                        width: 16px;
+                        background-color: $color1;
+                    }
+                    span:nth-child(2) {
+                        width: 10px;
+                    }
+                    .burger-menu {
+                        box-shadow: 1px 0px 47px #000000;
+                        visibility: hidden;
+                        height: 100%;
+                        width: 76%;
+                        @include position (fixed, 0px, 0px);
+                        background-color: $color01;
+                        @extend %flex3;
+                        .burger-logo {
+                            @include font ($font1, $font-size1, bold, $color2);
+                            text-transform: uppercase;
+                            padding: 40px;                            
+                        }
+                        .burger-ul {
+                            padding: 0 40px;
+                            @extend %flex3;
+                            width: 100%;
+                            .burger-li {
+                                margin: 35px 0;
+                                a {
+                                    img {
+                                        @extend %icon;
+                                        margin-right: 30px;
+                                    }
+                                }
+                            }
+                            .burger-li:last-child {
+                                a {
+                                    img {
+                                        object-fit: contain;
+                                        clip-path: circle(50% at 50% 50%);
+                                    }
+                                }
+                            }
+                        }
+                        .burger-footer {
+                            width: 100%;
+                            background-color: $color02;
+                            @extend %flex3;
+                            .burger-footer-nav {
+                                padding: 40px;
+                                width: 100%;
+                                .burger-footer-ul {
+                                    @extend %flex3;
+                                    max-height: 150px;
+                                    flex-wrap: wrap;
+                                    .burger-footer-li {
+                                        margin: 0 50px 21px 0;
+                                        flex-grow: 1;
+                                        a {
+                                            @include font ($font1, $font-size2, bold, $color7);
+                                        }
+                                    }
+                                }
+                            }
+                            .social-icons {
+                                padding: 0 40px 40px 40px;
+                                margin: 0 auto;
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -61,6 +143,7 @@ body {
                 h2 {
                     @include font ($font1, $font-size3, bold, $color3);
                     text-transform: uppercase;
+                    line-height: 42px;
                     display: block;
                     padding-bottom: 40px;
                     border-bottom: solid 2px $color3;
@@ -69,11 +152,11 @@ body {
                     padding-top: 40px;
                     h4 {
                         @include font ($font1, $font-size3, bold, $color3);
+                        line-height: 34px;
                     }
                     p {
                         @include font ($font1, $font-size4, regular, $color3);
                         margin: 11px 0 32px;
-                        min-width: 560px;
                         line-height: 26px;
                     }
                     button {
